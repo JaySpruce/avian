@@ -5,7 +5,7 @@ use bevy::{
     ecs::query::QueryData,
     prelude::{Entity, Has, Ref},
 };
-use std::ops::{AddAssign, SubAssign};
+use core::ops::{AddAssign, SubAssign};
 
 /// A `WorldQuery` to make querying and modifying rigid bodies more convenient.
 #[derive(QueryData)]

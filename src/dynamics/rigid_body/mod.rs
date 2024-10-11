@@ -267,6 +267,7 @@ impl RigidBody {
 }
 
 /// Indicates that a [rigid body](RigidBody) is not simulated by the physics engine until woken up again.
+///
 /// This is done to improve performance and to help prevent small jitter that is typically present in collisions.
 ///
 /// Bodies are marked as sleeping when their linear and angular velocity is below the [`SleepingThreshold`] for a time

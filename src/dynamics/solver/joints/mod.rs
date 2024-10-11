@@ -1,4 +1,5 @@
 //! **Joints** are a way to connect entities in a way that restricts their movement relative to each other.
+//!
 //! They act as [constraints](dynamics::solver::xpbd#constraints) that restrict different *Degrees Of Freedom*
 //! depending on the joint type.
 //!

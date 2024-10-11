@@ -427,7 +427,7 @@ impl ShapeHits {
     }
 
     /// Returns an iterator over the hits in the order of time of impact.
-    pub fn iter(&self) -> std::slice::Iter<ShapeHitData> {
+    pub fn iter(&self) -> core::slice::Iter<ShapeHitData> {
         self.as_slice().iter()
     }
 }

@@ -3,6 +3,7 @@ use bevy::prelude::*;
 use bevy::utils::HashMap;
 
 /// A component that will automatically generate [`Collider`]s on its descendants at runtime.
+///
 /// The type of the generated collider can be specified using [`ColliderConstructor`].
 /// This supports computing the shape dynamically from the mesh, in which case only the descendants
 /// with a [`Mesh`] will have colliders generated.
@@ -234,6 +235,7 @@ pub struct ColliderConstructorHierarchyConfig {
 }
 
 /// A component that will automatically generate a [`Collider`] at runtime using [`Collider::try_from_constructor`].
+///
 /// Enabling the `collider-from-mesh` feature activates support for computing the shape dynamically from the mesh attached to the same entity.
 ///
 /// Since [`Collider`] is not [`Reflect`], you can use this type to statically specify a collider's shape instead.

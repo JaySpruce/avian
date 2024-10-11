@@ -306,6 +306,7 @@ impl From<Scalar> for ColliderDensity {
 }
 
 /// An automatically added component that contains the read-only mass properties of a [`Collider`].
+///
 /// The density used for computing the mass properties can be configured using the [`ColliderDensity`]
 /// component.
 ///

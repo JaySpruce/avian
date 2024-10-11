@@ -5,7 +5,7 @@
 mod time;
 pub use time::*;
 
-use std::time::Duration;
+use core::time::Duration;
 
 // For doc links
 #[allow(unused_imports)]

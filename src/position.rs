@@ -518,7 +518,7 @@ impl From<Rotation> for Matrix {
 }
 
 #[cfg(feature = "2d")]
-impl std::ops::Mul for Rotation {
+impl core::ops::Mul for Rotation {
     type Output = Self;
 
     fn mul(self, rhs: Self) -> Self::Output {
@@ -530,14 +530,14 @@ impl std::ops::Mul for Rotation {
 }
 
 #[cfg(feature = "2d")]
-impl std::ops::MulAssign for Rotation {
+impl core::ops::MulAssign for Rotation {
     fn mul_assign(&mut self, rhs: Self) {
         *self = *self * rhs;
     }
 }
 
 #[cfg(feature = "2d")]
-impl std::ops::Mul<Vector> for Rotation {
+impl core::ops::Mul<Vector> for Rotation {
     type Output = Vector;
 
     /// Rotates a [`Vector`] by a [`Rotation`].
