@@ -57,6 +57,9 @@ path = "../../src/lib.rs"
 required-features = ["3d"]
 bench = false
 
+[lints]
+workspace = true
+
 [dependencies]
 avian_derive = { path = "../avian_derive", version = "0.1" }
 bevy = { version = "0.14", default-features = false }
